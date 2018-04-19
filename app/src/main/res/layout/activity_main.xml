@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.alexanderschink.drumapp.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/drumkit"
+            app:srcCompat="@drawable/drumset"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <Button
+            android:id="@+id/crash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bass"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="93dp"
+            android:alpha="0.00"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/fart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:alpha="0.00"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/snare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fart"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/fart"
+            android:alpha="0.00"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/bass"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tom"
+            android:layout_marginBottom="136dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/button"
+            android:visibility="visible"
+            android:alpha="0.00"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="276dp" />
+
+        <Button
+            android:id="@+id/tom"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/snare"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="34dp"
+            android:alpha="0.00"
+            android:text="@string/button"
+            android:visibility="invisible" />
+
+
+</RelativeLayout>
